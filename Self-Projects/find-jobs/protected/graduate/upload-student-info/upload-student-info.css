@@ -1,0 +1,26 @@
+body {
+  background: rgb(226,244,239);
+  background: linear-gradient(90deg, rgba(226,244,239,1) 10%, rgba(187,204,215,1) 39%, rgba(95,120,181,1) 72%, rgba(22,45,102,1) 100%);
+  padding: 1%;
+}
+
+.tecky-logo{
+  padding: .1em;
+  height: 4em;
+  width: 4em;
+  border-radius: 18em;
+}
+
+.navbar {
+  display:flex;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  font-weight: bold;
+  border-radius:5px
+} 
+#date-of-birth{
+  width: auto;
+}

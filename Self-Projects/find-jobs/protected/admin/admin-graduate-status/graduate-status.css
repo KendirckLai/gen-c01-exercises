@@ -1,0 +1,73 @@
+body {
+  background: rgb(226,244,239);
+  background: linear-gradient(90deg, rgba(226,244,239,1) 10%, rgba(187,204,215,1) 39%, rgba(95,120,181,1) 72%, rgba(22,45,102,1) 100%);
+  padding: 1%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.tecky-logo{
+  padding: .1em;
+  height: 4em;
+  width: 4em;
+  border-radius: 18em;
+}
+
+.navbar {
+  display:flex;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  font-weight: bold;
+  border-radius:5px
+} 
+
+.active-purple input.form-control[type=text] {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+    max-width: vw 50;
+  }
+
+#search-bar{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.search{
+  font-size: medium;
+  padding-right: 20px;
+}
+
+.application-bar{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: nowrap;
+}
+
+.application-details{
+    padding: 5px;
+    max-width: vw 10;
+  }
+
+.btn-withdraw{
+  background-color: #F7DDDC;
+  padding: 5px;
+  color: #1177D1 !important;
+  height: auto;
+  width: 50px;
+}
+
+.withdraw-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+
+#applications-container-2{
+  margin-top: 50px;
+}

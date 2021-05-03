@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Landing</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/login.html">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+  <div class="container">SHOP Registration form
+    <form id= create-shop-form action="post" path= "/api/v1/shop">
+      <div class="form-group">
+        <div class="col-md-12 mb-6">
+          <label for="shopNameChinese">shop name (chinese)</label>
+          <input 
+          type="text" 
+          class="form-control is-valid" 
+          id="shopNameChinese" 
+          name="shopNameChinese"
+          placeholder="First name" 
+          value="Mark"
+          required/>
+         
+       
+        <div class="form-group ">
+          <label for="validationServer02">shop name (English)</label>
+          <input type="text" 
+          class="form-control is-valid" 
+          id="shopNameEnglish" 
+          name="shopNameEnglish"
+          placeholder="Last name" 
+          value="Otto"
+            required>
+         
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <label for="validationServerUsername ">Region</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Region" id="Region" value="hki"
+              checked>
+            <label class="form-check-label" for="exampleRadios">
+              香港島
+              <select class="custom-select HKisland" id="hki" name="hki_areas">
+                <!-- <option selected>Open this select menu</option> -->
+                <option value="65">柴灣 /杏花邨</option>
+                <option value="66">筲箕灣</option>
+                <option value="67">西灣河 / 太古</option>
+                <option value="68">鰂魚涌</option>
+                <option value="69">北角 / 炮台山</option>
+                <option value="70">寶馬山 / 北角半山</option>
+                <option value="71">渣甸山 / 大坑</option>
+                <option value="72">跑馬地 / 東半山</option>
+                <option value="73">灣仔 / 銅鑼灣</option>
+                <option value="74">天后</option>
+                <option value="75">中半山 / 金鐘</option>
+                <option value="76">中上環</option>
+                <option value="77">港島西</option>
+                <option value="78">西半山</option>
+                <option value="79">山頂</option>
+                <option value="80">貝沙灣 / 薄扶林</option>
+                <option value="81">鴨脷洲</option>
+                <option value="82">香港仔 / 黃竹坑</option>
+                <option value="83">淺水灣 / 壽臣山</option>
+                <option value="84">大潭 / 石澳</option>
+                <option value="85">赤柱</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Region" id="Region" value="kw"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              九龍
+              <select class="custom-select knowloon" id="kw" name="kw_areas">
+                <option value="86">尖沙咀</option>
+                <option value="87">九龍站</option>
+                <option value="88">油麻地</option>
+                <option value="89">京士柏</option>
+                <option value="90">旺角</option>
+                <option value="91">大角咀</option>
+                <option value="92">奧運</option>
+                <option value="93">荔枝角</option>
+                <option value="94">美孚</option>
+                <option value="95">長沙灣 / 深水埗</option>
+                <option value="96">又一村</option>
+                <option value="97">九龍塘 / 筆架山</option>
+                <option value="98">何文田</option>
+                <option value="99">紅磡</option>
+                <option value="100">土瓜灣</option>
+                <option value="101">啟德</option>
+                <option value="102">九龍城</option>
+                <option value="103">觀塘</option>
+                <option value="104">藍田 / 油塘</option>
+                <option value="105">康城</option>
+                <option value="106">調景嶺</option>
+                <option value="107">坑口</option>
+                <option value="108">寶琳 / 將軍澳站</option>
+
+              </select>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Region" id="exampleRadios" value="nw"
+              checked>
+            <label class="form-check-label" for="exampleRadios1">
+              新界
+              <select class="custom-select" id="nw" name="nw_areas">
+                <option value="109">西貢 / 清水灣</option>
+                <option value="110">沙田</option>
+                <option value="111">九肚山 / 火炭</option>
+                <option value="112">馬鞍山</option>
+                <option value="113">大埔</option>
+                <option value="114">新界北</option>
+                <option value="115">上水 / 粉嶺</option>
+                <option value="116">洪水橋</option>
+                <option value="117">錦繡 / 加州 / 葡萄園</option>
+                <option value="118">天水圍</option>
+                <option value="119">元朗</option>
+                <option value="120">屯門</option>
+                <option value="121">荃灣</option>
+                <option value="122">深井</option>
+                <option value="123">馬灣</option>
+                <option value="124">葵涌</option>
+                <option value="125">青衣</option>
+                <option value="126">愉景灣</option>
+                <option value="127">東涌</option>
+                <option value="128">大嶼山 / 離島</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      
+
+      <div class=" ">
+        <label class="form-check-label" for="exampleRadios1">
+          category
+          <select class="custom-select" name="categories">
+            <option value="2">動物 與 寵物</option>
+            <option value="3">美容 與 個人護理</option>
+            <option value="4">商業服務</option>
+            <option value="5">建築 / 製造</option>
+            <option value="6">教育 / 培訓</option>
+            <option value="7">電子 / 科技</option>
+            <option value="8">活動 / 娛樂</option>
+            <option value="9">飲食</option>
+            <option value="10">健康 / 醫療</option>
+            <option value="11">愛好 / 手工藝品</option>
+            <option value="12">家居 / 園藝</option>
+            <option value="13">家庭服務</option>
+            <option value="14">法律服務 / 政府</option>
+            <option value="15">媒體 / 出版</option>
+            <option value="16">貨幣 / 保險</option>
+            <option value="17">公共服務</option>
+            <option value="18">餐廳 / 酒吧</option>
+            <option value="19">購物 與 時尚</option>
+            <option value="20">運動</option>
+            <option value="21">旅遊度假</option>
+            <option value="22">公共設施</option>
+            <option value="23">車輛 / 運輸</option>
+
+          </select>
+        </label>
+        
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  
+
+  </form>
+</div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="./js/createShop.js" ></script>
+</body>
+
+</html>

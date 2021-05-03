@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "wsp009",
+            "dialect": "PostgreSQL",
+            "name": "WSP009 Session",
+            "password": "2dcc9f9",
+            "port": 5432,
+            "server": "localhost",
+            "username": "garylai916"
+        },
+        {
+            "database": "teckyjobportal",
+            "dialect": "PostgreSQL",
+            "name": "project-1",
+            "password": "88888888",
+            "port": 5432,
+            "server": "localhost",
+            "username": "garylai916"
+        }
+    ]
+}

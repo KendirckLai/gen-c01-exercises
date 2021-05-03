@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="upload-student-info.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="tecky_logo.jpeg" class="tecky-logo" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto text-center nav">
+          <li class="nav-item disable">
+            <a class="nav-link" href="../graduate-read-jobs/graduate-read-jobs.html">READ JOBS</a>
+          </li>
+          <li class="nav-item disable">
+            <a class="nav-link" href="../graduate-applied-jobs/graduate-applied-jobs.html">APPLIED JOBS</a>
+          </li>
+          <li class="nav-item disable">
+            <a class="nav-link" href="../graduate-profile/graduate-profile.html">PROFILE</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link active">
+              STUDENT
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">
+              <i class="fas fa-sign-out-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form action="/students" method='POST' enctype="multipart/form-data" id='student-form'>
+      <div class="form-group">
+        <label for="cohort">Cohort</label>
+        <select type="integer" class="form-control" id="cohort" name="cohort">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Personal Website</label>
+        <input type="text" class="form-control" id="personal-website" name="personal_website">
+      </div>
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="integer" class="form-control" id="phone-number" name="phone_number">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date-of-birth" name="date_of_birth">
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Looking for Job</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="looking_for_job" id="yes-looking-for-job" value="Yes"
+                checked>
+              <label class="form-check-label" for="gridRadios1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="looking_for_job" id="no-looking-for-job" value="No">
+              <label class="form-check-label" for="gridRadios2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label>CV</label>
+        <input type='file' name="cv" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="upload-student-info.js"></script>
+</body>
+
+</html>
