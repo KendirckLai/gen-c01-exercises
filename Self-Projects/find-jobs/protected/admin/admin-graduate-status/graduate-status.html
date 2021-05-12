@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="graduate-status.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="tecky_logo.jpeg" class="tecky-logo" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto text-center nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../admin-graduate-status/graduate-status.html">GRADUATE STATUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../admin-applied-jobs/admin-applied-jobs.html">APPLIED JOBS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../admin-read-jobs/admin-read-jobs.html">READ JOBS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../admin-upload-jobs/upload-jobs.html">UPLOAD JOBS</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item active">
+            <a class="nav-link">
+              ADMIN
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">
+              <i class="fas fa-sign-out-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container" id="search-bar">
+    <div class="search">Search: </div>
+
+    <div class="row search-bar">
+      <div class="md-form active-purple active-purple-2 mb-3">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="applications-container">
+    <div class="row ">
+      <h3>Students with application</h3>
+    </div>
+    <div class="row application-bar">
+      <div class="col ">
+        <div>Student id </div>
+      </div>
+      <div class="col ">
+        <div>Student Name </div>
+      </div>
+      <div class="col">
+        <div>Cohort</div>
+      </div>
+      <div class="col">
+        <div>Total Job Applied</div>
+      </div>
+      <div class="col">
+        <div>Latest Applied Date</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid" id="applications-container-2">
+    <div class="row ">
+      <h3>Students with no application</h3>
+    </div>
+    <div class="row application-bar">
+      <div class="col ">
+        <div>Student id </div>
+      </div>
+      <div class="col ">
+        <div>Student Name </div>
+      </div>
+      <div class="col">
+        <div>Cohort</div>
+      </div>
+      <div class="col">
+        <div>Total Job Applied</div>
+      </div>
+      <div class="col">
+        <div>Latest Applied Date</div>
+      </div>
+    </div>
+
+
+
+    <div class="row students-application-details">
+      <div class="col without-apply"></div>
+      <div class="col without-apply student-name"></div>
+      <div class="col without-apply"></div>
+      <div class="col without-apply"></div>
+      <div class="col without-apply"></div>
+      <div class="col without-apply"></div>
+    </div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="graduate-status.js"></script>
+
+</body>
+
+</html>
